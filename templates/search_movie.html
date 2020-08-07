@@ -3,14 +3,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
+                   <div class="card-body">
+                        <h3 class="card-title">{{ search_movie.title }}</h3>
+                    </div>
                 <div class="card m-2">
                     <img class="card-img-top img-responsive"
                          src="{{ search_movie.poster }}"
                          alt="Woody Harrelson, Dennis Quaid, Aaron Eckhart, Mandy Moore, Etsushi Toyokawa, Patrick Wilson, Luke Evans, Nick Jonas, and Ed Skrein in Midway (2019)"
-                         height="250" width="40">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ search_movie.title }}</h5>
-                    </div>
+                         height="250" width="400">
                     <div class="card-footer">
                         <small class="text-muted text-info btn btn-warning m-2">Ratings
                             <span>{{ search_movie.rating }}</span></small>
