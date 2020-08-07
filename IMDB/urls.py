@@ -19,5 +19,6 @@ from app1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.showindex),
+    path('',views.showindex,name='home'),
+    path('movieName/',views.searchMovie,name='movieName'),
 ]
