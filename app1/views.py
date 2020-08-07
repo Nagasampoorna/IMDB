@@ -54,21 +54,22 @@ def searchMovie(request):
         return HttpResponse('Please Enter Correct Movie Name')
 
 # def showindex(request):
-#     dict_data = json.loads(open(IMDB_FILE).read())
-#     print(dict_data)
-#     return render(request,'index.html',{'data':dict_data})
-
-# Create your views here.
+#     # dict = json.loads(open(IMDB_FILE).read())
+#     dict = dict_data()
+#     print(dict)
+#     return render(request,'index.html',{'data':dict})
+#
+#
 # def searchMovie(request):
 #     name = request.GET.get('movieName')
-#     dict_data = showindex(request)
+#     dict = dict_data()
+#     # print(dict)
 #     print(name)
 #     # print(dict_data)
-#
-#     for x in dict_data:
-#         if x.title == name:
+#     for x in dict:
+#         if x['title'] == name:
 #             print(x)
 #             return render(request,'search_movie.html',{'search_movie': x})
-#     else:
-#         error(request,'enter another movie name')
-#         return HttpResponse('Please Enter Correct Movie Name')
+#         else:
+#             error(request,'enter another movie name')
+#             return HttpResponse('Please Enter Correct Movie Name')
